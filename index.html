@@ -51,60 +51,74 @@
             </ul>
           </nav>
           <div class="user-block">
-            <a class="search" href="#">
-              <img src="img/loupe-icon.svg" width="17" height="17" alt="Найти">
-              <img class="loupe-black" src="img/loupe-icon-black.svg" width="17" height="17" alt="Найти">
-            </a><!--
-         --><a class="login" href="#">
-              <img class="enter-icon" src="img/enter-icon.svg" width="21" height="19" alt="Войти">
-              Вход
-            </a><!--
-         --><a class="cart" href="#">
-              <img class="cart-icon" src="img/cart-icon.svg" width="21" height="20" alt="Телега">
-              Пусто
-            </a>
-          </div>
-          <div class="search-container">
-            <input type="text" name="search-field" placeholder="Что ищем?">
-          </div>
-          <div class="access-container">
-            <form class="access-form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="email" name="e-mail" placeholder="Электронная почта">
-              <input type="password" name="password" placeholder="Пароль">
-              <div class="half-width">
-                <button class="btn enter-btn" type="button">Войти</button>
+            <div class="search-container">
+              <a class="user-btn search" href="#">
+                <img src="img/loupe-icon.svg" width="17" height="17" alt="Найти">
+                <img class="loupe-black" src="img/loupe-icon-black.svg" width="17" height="17" alt="Найти">
+              </a>
+              <div class="search-block">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                  <input type="text" name="search-field" placeholder="Что ищем?">
+                </form>
               </div>
-              <div class="half-width">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </div>
-            </form>
-          </div>
-          <div class="cart-container">
-            <section class="goods-container">
-              <div class="choosen-product">
-                <a class="exit-btn" href="#">X</a>
-                <div class="ice-cream-icon">
-                  <img src="img/creamy-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+            </div><!--
+         --><div class="access-container">
+              <a class="user-btn login" href="#">
+                <img class="enter-icon" src="img/enter-icon.svg" width="21" height="19" alt="Войти">
+                <img class="enter-icon-black" src="img/enter-icon-black.svg" width="21" height="19" alt="Войти">
+                Вход
+              </a>
+              <div class="access-block">
+                <form class="access-form" action="https://echo.htmlacademy.ru" method="post">
+                  <input type="email" name="e-mail" placeholder="Электронная почта">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <button class="btn enter-btn" type="button">Войти</button><!--
+               --><div class="links-box">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
                 </div>
-                <span class="ice-cream-title">Пломбир с апельсиновым джемом</span>
-                <span class="weight">1,5 кг</span>
-                <span class="cost">х 200 руб.</span>
-                <span class="sum">300 руб.</span>
-              </div>
-              <div class="choosen-product">
-                <a class="exit-btn" href="#">X</a>
-                <div class="ice-cream-icon">
-                  <img src="img/creamy-strawberry.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+              </form>
+            </div><!--
+         --><div class="cart-container">
+              <a class="user-btn cart" href="#">
+                <img class="cart-icon" src="img/cart-icon.svg" width="21" height="20" alt="Телега">
+                <img class="cart-icon-black" src="img/cart-icon-black.svg" width="21" height="20" alt="Телега">
+                <img class="cart-icon-background" src="img/cart-icon-bg.svg" width="16" height="11" alt="Полна телега">
+                Пусто
+              </a>
+              <div class="cart-block">
+                <section class="goods-container clearfix">
+                  <div class="choosen-product">
+                    <a class="exit-btn" href="#">
+                      <img src="img/cross.svg" width="11" height="11" alt="Крестик">
+                    </a><!--
+                 --><div class="ice-cream-icon">
+                      <img src="img/creamy-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    </div><!--
+                 --><span class="ice-cream-title">Пломбир с апельсиновым джемом</span><!--
+                 --><span class="weight">1,5 кг </span>
+                    <span class="cost">х 200 руб.</span><!--
+                 --><span class="sum">300 руб.</span>
+                  </div>
+                  <div class="choosen-product">
+                    <a class="exit-btn" href="#">
+                      <img src="img/cross.svg" width="11" height="11" alt="Крестик">
+                    </a><!--
+                 --><div class="ice-cream-icon">
+                      <img src="img/creamy-strawberry.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    </div><!--
+                 --><span class="ice-cream-title">Клубничный пломбир с присыпкой из белого шоколада</span><!--
+                 --><span class="weight">1,5 кг </span>
+                    <span class="cost">х 300 руб.</span><!--
+                 --><span class="sum">450 руб.</span>
+                  </div>
+                </section>
+                <div class="total-sum">
+                  <span>Итого: 750 руб.</span>
+                  <a class="btn order-btn" href="#">Оформить заказ</a>
                 </div>
-                <span class="ice-cream-title">Клубничный пломбир с присыпкой из белого шоколада</span>
-                <span class="weight">1,5 кг</span>
-                <span class="cost">х 300 руб.</span>
-                <span class="sum">450 руб.</span>
               </div>
-            </section>
-            <div class="total-sum">
-              <span>Итого: 750 руб.</span>
             </div>
           </div>
         </header>
@@ -212,7 +226,7 @@
           <section class="news-block">
             <div class="half-width blog-preview">
               <span>Новое в нашем блоге</span>
-              <a href="#">
+              <a class="article-title" href="#">
                 10 способов сервировки<br>
                 фруктовых щербетов<br>
                 к столу
@@ -267,6 +281,7 @@
               <li>
                 <a class="providers" href="#">
                   <img class="heart-icon" src="img/heart-icon.svg" width="15" height="13" alt="Сердце">
+                  <img class="heart-icon heart-icon-pink" src="img/heart-icon-pink.svg" width="15" height="13" alt="Сердце">
                   Для поставщиков
                 </a>
               </li>
