@@ -1531,6 +1531,7 @@ footer .social {
 /*** Всплывающее окно обратной связи ***/
 
 .feedback-popup {
+	display: none;
 	position: absolute;
 	top: 338px;
 	left: 50%;
